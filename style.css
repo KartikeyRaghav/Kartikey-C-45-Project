@@ -1,0 +1,75 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Acme', sans-serif;
+}
+canvas{
+  border: 2px solid black;
+}
+
+.hide{
+  display: none;
+}
+
+.button1{
+  left: 1000px;
+}
+
+body{
+  background-color: #0a3d62;
+}
+
+.feedback{
+  width: 250px;
+}
+
+.container{
+  width:70%; margin: auto; text-align: center;
+}
+
+.dice{
+  text-align: right; display: inline-block;
+}
+
+h1{
+  margin: 30px;
+  text-shadow: 5px 5px white;
+  font-size: 6rem;
+  color: #f6b93b;
+}
+
+p{
+  font-size: 2rem;
+  color: #00b894;
+  text-shadow: 1px 1px white;
+}
+
+button {
+  padding: 10px;
+  background: #00b894;
+  color: white;
+  border: none;
+  margin: 70px;
+}
+
+img{
+  margin-left: 60px;
+  margin-right: 60px;
+  width: 100%;
+}
+
+.startScreen {
+  cursor: pointer;
+  font-style: italic;
+  font-size: 20px;
+  background-color: black;
+  color: yellow;
+  width: 40px;
+}
+
+.car {
+  width: 50px;
+  height: 70px;
+  background-color: red;
+  position: relative;
+}

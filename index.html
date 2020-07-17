@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>My Own Game</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.dom.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.9.0/addons/p5.sound.min.js"></script>
+    <script src="p5.play.js"></script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.15.5/firebase-database.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+        https://firebase.google.com/docs/web/setup#available-libraries -->
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDUbq-EuVkOlykATDhxT7V9cc6xwPCjmso",
+        authDomain: "creating-my-own-game-1.firebaseapp.com",
+        databaseURL: "https://creating-my-own-game-1.firebaseio.com",
+        projectId: "creating-my-own-game-1",
+        storageBucket: "creating-my-own-game-1.appspot.com",
+        messagingSenderId: "1069410735040",
+        appId: "1:1069410735040:web:f816a818f83c417323ee25"
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+    </script>
+
+    <script src="js/Player.js"></script>
+    <script src="js/Form.js"></script>
+    <script src="js/Game.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+  </head>
+  <body>
+    <script src="sketch.js"></script>
+
+    <div class="startScreen">GO</div>
+
+    <button class="feedback hide" onclick="Feedback()">Type Feedback</button>
+
+    <div class="SubmitFeedback hide">
+      <button class="submit" onclick="SubmitF()">Submit Feedback</button>
+    </div>
+
+    <div class="container hide">
+      <h1>JS LUDO</h1>
+
+      <div class="dice">
+        <p>Player 1</p>
+        <img src="images/dice1.png" id="check1">
+      </div>
+
+      <div class="dice">
+        <p>Player 2</p>
+        <img src="images/dice2.png" id="check2">
+      </div>
+
+    
+      <button onclick="ludoGame()" class="button1">Click ME</button>
+
+    </div>
+
+    <div class="endScreen hide">
+      <h3> You Clicked the button 100 times.</h3>
+    </div>
+
+  </body>
+</html>
